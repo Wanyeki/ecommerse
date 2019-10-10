@@ -1,0 +1,9 @@
+.footer{
+    display:flex;
+    justify-content: space-around;
+    background: linear-gradient(#00C2FC,#3C00CE )
+}
+.footer li{
+    list-style: none;
+    color:#fff;
+}
