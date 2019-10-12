@@ -38,7 +38,7 @@ class Navbar extends Component {
 
         </div>
         <div className="nav-right">
-            <ul className="nav-links animate slideInDown">
+            <ul className="nav-links animated slideInDown">
                 <li className="nav-link"><i class="fa fa-comment nav-icon has-pill"><div className="pill">{this.state.db_data.messages}</div></i></li>
                 <li className="nav-link"><i class="fa fa-heart nav-icon has-pill"><div className="pill">{this.state.db_data.favourite}</div></i></li>
                 <li className="nav-link"><i class="fa fa-plus nav-icon has-pill"></i></li>

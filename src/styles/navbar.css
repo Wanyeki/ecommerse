@@ -19,7 +19,6 @@
 }
 .nav-link:hover{
     /* background:rgb(170, 66, 1); */
-   border-color: #FF5487;
    font-weight: bold;
    font-size:1.1em;
 }
@@ -28,6 +27,11 @@
     background:#fff;
     border-radius: 20px;
     color:#000;
+    position: relative;
+    padding:0;
+}
+.search:focus,.search-btn:focus{
+    outline:none;
 }
 .search{
     width:300px;
@@ -36,7 +40,7 @@
     height:40px;
     border-radius: 20px;
     padding:10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 .search-btn{
     background:#FF5487;
@@ -44,6 +48,11 @@
     height:40px;
     border-radius: 0 20px 20px 0;
     border:0;
+    margin-top:0;
+    position: absolute;
+    top:0;
+    right:0;
+    width:40px;
 
 }
 .brand{
@@ -118,6 +127,7 @@
 @media(max-width:700px){
    .nav-links{
        display: none;
+       z-index: -1;
    }
    .toggler{
        display:block;

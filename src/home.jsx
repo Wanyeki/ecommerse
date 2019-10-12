@@ -21,8 +21,8 @@ class Home extends Component {
                        <Sidebar/>
                    </div>
                    <Cards/>
+                   {/* <Footer/> */}
                </div>
-               {/* <Footer/> */}
            </React.Fragment>
         );
     }
