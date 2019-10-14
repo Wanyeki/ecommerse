@@ -109,15 +109,15 @@ margin-top: 10px;
 
 }
 .cart .nav-drop-pointer{
-    top:-30px;
+    top:-24px;
     left:340px;
 }
 .cart{
     position: absolute;
-    bottom: -290px;
+    bottom: -400px;
     background:#3585FA;
     width:400px;
-    left:-30px;
+    left:-20px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -127,13 +127,15 @@ margin-top: 10px;
 }
 .cart-items{
     position: relative;
+    max-height:357px;
+    overflow: auto;
 }
 .nav-drop{
     display:none;
     height:0;
     position:absolute;
     bottom:-40px;
-    width:300px;
+    width:400px;
     border-radius: 14px; z-index: 4;
     box-sizing:border-box;
     padding:10px;
@@ -223,4 +225,12 @@ margin-top: 10px;
    .nav{
        display: block;
    }
+}
+.btn-p{
+    background:#FF5487;
+    color:#fff;
+    padding:5px 10px;
+    border:0;
+    border-radius:10px;
+    margin-top:10px;
 }
