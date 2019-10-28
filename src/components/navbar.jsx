@@ -53,7 +53,8 @@ cart_toggleHandler=()=>{
                 <li className="nav-link" onClick={this.messages_toggleHandler}><i class="fa fa-comment nav-icon has-pill"><div className="pill">{this.state.db_data.messages}
                 </div></i>
                 <div className="nav-drop animated slideInUp" style={{display:this.state.messages_panel}}>
-                    <div className="drop-content">
+                  
+                    <div className="drop-content">  <div className="cancel"><i class="fa fa-times-circle" aria-hidden="true">rtyuio</i></div>
                         <div className="nav-drop-pointer"></div>
                     <div className="message-screen">
                         <span>Messages</span>
