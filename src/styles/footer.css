@@ -1,9 +1,29 @@
 .footer{
     display:flex;
     justify-content: space-around;
-    background: linear-gradient(#00C2FC,#3C00CE )
+    background: #3546d4;
+    margin-top:5px;
+    z-index: -1;
+    margin-left:250px;
 }
 .footer li{
     list-style: none;
     color:#fff;
+}
+.logos{
+    color:#fff;
+    font-size: 1.3em;
+}
+
+@media(max-width:795px){
+.footer{
+    margin-left:0;
+}
+.footer li{
+    font-size:0.8em;
+}
+.logos{
+    color:#fff;
+    font-size: 0.7em;
+}
 }

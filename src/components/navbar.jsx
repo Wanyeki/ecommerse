@@ -2,7 +2,7 @@ import '../styles/navbar.css';
 import React, { Component } from 'react';
 import image from '../images/avatar.jpg'
 import image2 from '../images/z.jpg'
-import Loader from '../components/loading '
+import Loader from './loading '
 import logo from '../images/logo.svg'
 class Navbar extends Component {
     state = { 
@@ -134,7 +134,7 @@ cart_toggleHandler=()=>{
                     </div>
                 </div></li>
                 <li className="nav-link"><i className="fa fa-question nav-icon has-pill"></i></li>
-                <li className="nav-link nav-link-active"><i class="fa fa-user" aria-hidden="true"></i></li>
+                <li className="nav-link nav-link-active"><i className="fa fa-user" aria-hidden="true"></i></li>
 
             </ul>  
         </div> 
