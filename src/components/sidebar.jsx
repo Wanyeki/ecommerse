@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 class Sidebar extends Component {
     state = {  }
     render() { 
@@ -11,17 +11,17 @@ class Sidebar extends Component {
             <div className="sidebar-content">
                 <div className="categories-section side-section">
                     <h3 className="side-title">
-                        Categories
+                    tshirt            Categories
                     </h3>
                     <ul className="side-section-list categories">
-                        <li className="category side-section-item active-item"><i className="fa fa-tshirt"></i> clothings</li>
-                        <li className="category side-section-item"><i className="fa fa-pizza-slice"></i> Food</li>
-                        <li className="category side-section-item"><i className="fa fa-book"></i> Books</li>
-                        <li className="category side-section-item"><i className="fa fa-bicycle"></i> Bikes</li>
-                        <li className="category side-section-item"><i className="fa fa-laptop"></i> Laptops</li>
-                        <li className="category side-section-item"><i className="fa fa-mobile-alt"></i> Smart phones</li>
-                        <li className="category side-section-item"><i className="fa fa-pizza-slice"></i> Food</li>
-                        <li className="category side-section-item"><i className="fa fa-tshirt"></i> clothings</li>
+                        <Link to="/category/tshirt"> <li className="category side-section-item active-item"><i className="fa fa-tshirt"></i> clothings</li></Link>
+                        <Link to="/category/food"> <li className="category side-section-item"><i className="fa fa-pizza-slice"></i> Food</li></Link>
+                        <Link to="/category/books"> <li className="category side-section-item"><i className="fa fa-book"></i> Books</li></Link>
+                        <Link to="/category/bikes"> <li className="category side-section-item"><i className="fa fa-bicycle"></i> Bikes</li></Link>
+                        <Link to="/category/laptop"> <li className="category side-section-item"><i className="fa fa-laptop"></i> Laptops</li></Link>
+                        <Link to="/category/phone"> <li className="category side-section-item"><i className="fa fa-mobile-alt"></i> Smart phones</li></Link>
+                        <Link to="/category/food"> <li className="category side-section-item"><i className="fa fa-pizza-slice"></i> Food</li></Link>
+                        <Link to="/category/clothings"> <li className="category side-section-item"><i className="fa fa-tshirt"></i> clothings</li></Link>
                     </ul>
                 </div>
 

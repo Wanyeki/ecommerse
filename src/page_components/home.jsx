@@ -9,8 +9,7 @@ import Footer from '../components/footer'
 import Home_content from '../components/home_content';
 
 class Home extends Component {
-    state = {
-        sliding:true,
+    state = {       
          data:[
              {
                 id:1,
@@ -73,7 +72,7 @@ class Home extends Component {
              {
                 id:2,
                 title:'Hostels',
-                theme:['#CACA2E','#752500'],
+                theme:['#FDB730','#752500'],
                 items:[
                             {
                                 id:1,
@@ -363,17 +362,17 @@ class Home extends Component {
          ]
         }
     render() { 
+
         return(
            <React.Fragment>
-               <Navbar changepage={this.props.changepage}/>
-               <Header changepage={this.props.changepage}/>
+               <Header />
                <div className="wrapper">
-                   <Topbar changepage={this.props.changepage}/>
+                   <Topbar />
                    <div className="side">
-                       <Sidebar changepage={this.props.changepage}/>
+                       <Sidebar />
                    </div>
-                   <Home_content changepage={this.props.changepage} title={this.props.title} data={this.state.data } sliding={this.state.sliding}/>
-                   <Footer changepage={this.props.changepage}/>
+                   <Home_content  title='recomended' data={this.state.data } sliding={true}/>
+                   <Footer />
                </div>
            </React.Fragment>
         );

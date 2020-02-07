@@ -1,0 +1,21 @@
+.rec{
+    display:flex;
+    justify-content: space-around;    
+    padding: 15px 5px;
+    list-style:none;
+    cursor: pointer;
+}
+.recs{
+    background: #fff;
+    padding-left: 0; 
+     max-height:500px;
+   
+
+}
+.rec:hover{
+    background: rgb(186, 218, 245)
+}
+
+.rec .fa{
+    color:#FF5487
+}

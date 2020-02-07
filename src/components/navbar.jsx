@@ -4,6 +4,8 @@ import image from '../images/avatar.jpg'
 import image2 from '../images/z.jpg'
 import Loader from './loading '
 import logo from '../images/logo.svg'
+import {Link} from 'react-router-dom'
+import Recs from './search_recomedations';
 class Navbar extends Component {
     state = { 
         collapsed:true,
@@ -13,11 +15,13 @@ class Navbar extends Component {
         },
         messages_panel:'none',
         cart_panel:'none',
-        loading:'none'
+        loading:'none',
+        recs:'none'
 
 
 
     }
+
 
 messages_toggleHandler=()=>{
  this.setState({messages_panel:'block',
@@ -49,13 +53,17 @@ cart_toggleHandler=()=>{
     <div className="nav">
         <div className="nav-left">
             <div className="brand">
-                <img src={logo} alt="" className="nav-logo"/>
+                <Link to="/">
+                <img src={logo} alt="" className="nav-logo"/> 
+                </Link>
                 <h3>wanyeki</h3>
+               <div className="carta"><i className="fa fa-shopping-cart nav-icon has-pill"><div className="pill">{this.state.db_data.messages}</div></i></div>
             </div>
             <div className="mobile-nav">
                      <div className="search-area">
-                <input type="text" className="search" placeholder="search items(eg phone)"/>
+                <input type="text" className="search" placeholder="search items(eg phone)"onFocus={()=>{console.log('hello'+this.state.recs);if(this.state.recs=='none'){this.setState({recs:'block'})}}}/>
                 <button onClick={this.load_items} className="search-btn"><i className="fa fa-search" aria-hidden="true"></i></button>
+                <Recs sstyle={{display:this.state.recs}}/>
             </div>
         <h1 className=" fa fa-bars toggler" onClick={this.toggleHandler}></h1> 
 </div>
@@ -140,6 +148,11 @@ cart_toggleHandler=()=>{
         </div> 
     </div>
     <Loader disp={this.state.loading}/>
+<div className="side-tog" >
+<div className="ic">
+<i className="fa fa-question nav-icon"></i>
+</div>
+</div>
 </div>
 
 

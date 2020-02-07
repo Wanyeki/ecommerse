@@ -9,7 +9,7 @@ class Cards extends Component {
             <div className="cards">
                 {
                 this.props.items.map(item=> {
-                    return <Card key={item.id} image={item.image} title={item.title} counts={item.counts} prices={item.prices}/>
+                    return <Card id={item.id} key={item.id} image={item.image} title={item.title} counts={item.counts} txt_color={'#000'} prices={item.prices}/>
                 })
             }
                 

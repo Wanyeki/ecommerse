@@ -11,7 +11,7 @@ render(){
           <div className="home-content">
               <h1 className="section-title">{this.props.title}</h1>
              {this.props.data.map(row => { 
-            return  <Sliding_cards changepage={this.props.changepage} items={row.items} slider_title={row.title} theme={row.theme} key={row.id}/>   
+            return  <Sliding_cards  items={row.items} slider_title={row.title} theme={row.theme} key={row.id}/>   
           })}
         </div> 
 
@@ -19,7 +19,8 @@ render(){
       }else{
                return (
                <div className="home-content">
-               <Cards changepage={this.props.changepage} items={this.props.data} />
+              <h1 className="section-title">{this.props.title}</h1>
+               <Cards  items={this.props.data} />
                </div> 
                );
       }

@@ -174,7 +174,36 @@ margin-top: 10px;
 
 
 }
-
+.side-tog{
+    position:fixed;
+    top:15%;
+    left:5px;
+    height:40px;
+    width:40px;
+    border-radius:10px;
+    background:#FF5487;
+    border:1px solid #3585FA;
+    display:none;
+}
+.ic{
+    margin-left:10px;
+    margin-top: 10px;
+    color:#fff;
+    
+}
+.btn-p{
+    background:#FF5487;
+    color:#fff;
+    padding:5px 10px;
+    border:0;
+    border-radius:10px;
+    margin-top:10px;
+}
+.carta{
+    margin-left: 63%;
+    margin-top:20px;
+    display:none;
+}
 .msgs{
     background:rgb(120, 168, 241);
     border-radius: 15px;
@@ -257,7 +286,12 @@ margin-top: 10px;
         display: block;
         text-align:center
     }
- 
+ .carta{
+     display:block;
+ }
+ .side-tog{
+     display:block;
+ }
    .nav-links{
        display: none;
        z-index: -1;
@@ -268,12 +302,4 @@ margin-top: 10px;
    .nav{
        display: block;
    }
-}
-.btn-p{
-    background:#FF5487;
-    color:#fff;
-    padding:5px 10px;
-    border:0;
-    border-radius:10px;
-    margin-top:10px;
 }

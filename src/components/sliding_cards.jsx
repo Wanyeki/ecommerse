@@ -14,7 +14,7 @@ class Sliding_cards extends Component {
                     <div className="glider">
                         {
                             this.props.items.map(item=>{
-                                return <Card changepage={this.props.changepage} txt_color={this.props.theme[1]} key={item.id} image={item.image} title={item.title} counts={item.counts} prices={item.prices}/>
+                                return <Card id={item.id} txt_color={this.props.theme[1]} key={item.id} image={item.image} title={item.title} counts={item.counts} prices={item.prices}/>
                             })
                         }
                     </div>
